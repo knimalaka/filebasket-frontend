@@ -1,6 +1,6 @@
 import React,{useState} from "react";
 
-class LoginForm extends React.Component {
+class SignupForm extends React.Component {
     
     state = {
         name: '',
@@ -21,6 +21,13 @@ class LoginForm extends React.Component {
     render(){
         return(
             <form onSubmit={this.handleSubmit}>
+                <lable>Name:
+                    <input 
+                    type="text"
+                    name="name"
+                    placeholder="name"
+                    onChange={this.handleChange}/>
+                </lable>
 
                 <div><lable>Email:
                     <input 
@@ -46,4 +53,4 @@ class LoginForm extends React.Component {
     }
 }
 
-export default LoginForm;
+export default SignupForm;
