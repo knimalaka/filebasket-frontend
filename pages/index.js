@@ -1,11 +1,16 @@
 import styles from '../styles/Home.module.css'
 import Footer from '../components/footer'
+import Head from 'next/head'
 
 export default function Front() {
   return (
     <div className={styles.container}>
-
       <main className={styles.main}>
+        <Head>
+          <title>File Basket</title>
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"></link>
+        </Head>
+
         <h1 className={styles.title}>
           Welcome to <a href='/'>File Basket!</a>
         </h1>
