@@ -19,7 +19,7 @@ export default function Front() {
 
         <div className={styles.grid}>
           <a href="user/login" className={styles.card}>
-            <h2>User Login&rarr;</h2>
+            <h2>User Login &rarr;</h2>
           </a>
 
           <a href="admin/aLogin" className={styles.card}>
