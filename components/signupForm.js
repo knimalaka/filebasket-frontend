@@ -21,32 +21,50 @@ class SignupForm extends React.Component {
     render(){
         return(
             <form onSubmit={this.handleSubmit}>
-                <lable>Name:
+
+                <br/><br/>
+
+                <div className="forms-inputs mb-4">
+                <label>Name:
+                    <br/>
                     <input 
                     type="text"
                     name="name"
                     placeholder="name"
                     onChange={this.handleChange}/>
-                </lable>
+                </label>
+                </div>
 
-                <div><lable>Email:
+                <br/>
+
+                <div className="forms-inputs mb-4">
+                <label>Email:
+                    <br/>
                     <input 
                     type="email"
                     name="email"
                     placeholder="email"
                     onChange={this.handleChange}/>
-                </lable></div>
+                </label>
+                </div>
 
-                <div><lable>Password:
+                <br/>
+
+                <div className="forms-inputs mb-4">
+                <label>Password:
+                    <br/>
                     <input 
                     type="password"
                     name="password"
                     placeholder="password"
                     onChange={this.handleChange}/>
-                </lable></div>
+                </label>
+                </div>
 
-                <input type="submit"/>
-
+                <br/>
+                <div className="col text-center">
+                <button className="btn btn-success btn-sm" type="submit">Submit</button>
+                </div>
             </form>
         )
     

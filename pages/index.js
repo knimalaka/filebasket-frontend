@@ -19,13 +19,11 @@ export default function Front() {
 
         <div className={styles.grid}>
           <a href="user/login" className={styles.card}>
-            <h2>User &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
+            <h2>User Login&rarr;</h2>
           </a>
 
           <a href="admin/aLogin" className={styles.card}>
-            <h2>Admin &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
+            <h2>Admin Login &rarr;</h2>
           </a>
 
         </div>

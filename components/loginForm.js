@@ -3,7 +3,6 @@ import React,{useState} from "react";
 class LoginForm extends React.Component {
     
     state = {
-        name: '',
         email: '',
         password: ''
     };
@@ -22,24 +21,36 @@ class LoginForm extends React.Component {
         return(
             <form onSubmit={this.handleSubmit}>
 
-                <div><lable>Email:
+                <br/><br/>
+
+                <div className="forms-inputs mb-4">
+                <label>Email:
+                    <br/>
                     <input 
                     type="email"
                     name="email"
                     placeholder="email"
                     onChange={this.handleChange}/>
-                </lable></div>
+                </label>
+                </div>
 
-                <div><lable>Password:
+                <br/>
+
+                <div className="forms-inputs mb-4">
+                <label>Password:
+                    <br/>
                     <input 
                     type="password"
                     name="password"
                     placeholder="password"
                     onChange={this.handleChange}/>
-                </lable></div>
+                </label>
+                </div>
 
-                <input type="submit"/>
-
+                <br/>
+                <div className="col text-center">
+                <button className="btn btn-success btn-sm" type="submit">Submit</button>
+                </div>
             </form>
         )
     
