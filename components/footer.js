@@ -8,10 +8,11 @@ export default function Footer(){
           href="https://www.elysiancrest.com/"
           target="_blank"
           rel="noopener noreferrer"
-        >
-          Powered by{' '}
+        ><div style={{color:'white'}}>
+          Powered by :
+          </div>
           <span className={styles.logo}>
-            <Image src="/EClogo.jpg" alt="EC Logo" width={60} height={60} />
+            <Image className='logo-image' src="/ECLogoDark.png" alt="EC Logo" width={70} height={70} />
           </span>
         </a>
         </footer>
