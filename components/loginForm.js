@@ -50,7 +50,7 @@ class LoginForm extends React.Component {
 
                 <br/>
                 <div className="col text-center">
-                <button className="btn btn-success btn-circle btn-sm" style={{height:30, borderRadius:30, width:130,fontFamily:'Bahnschrift',fontSize:14}} type="submit">Submit</button>
+                <button className="btn btn-success btn-sm" style={{height:30, borderRadius:30, width:130,fontFamily:'Bahnschrift',fontSize:14}} type="submit">Submit</button>
                 </div>
             </form>
         )
