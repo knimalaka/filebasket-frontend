@@ -6,6 +6,7 @@ import Head from 'next/head'
 export default function Signup(){
 return(
     <div className={styles.container}>
+      <div className={styles.background}>
         <main className={styles.main}>
         <Head>
           <title>File Basket</title>
@@ -13,8 +14,8 @@ return(
         </Head>
         <h1 className="text-center" style={{color:'#229954'}}>Create admin account</h1>
         <SignupForm />
-        
         </main>
+        </div>
         <Footer />
     </div>
 )

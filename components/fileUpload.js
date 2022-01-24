@@ -1,7 +1,8 @@
-import styles from '../styles/Home.module.css'
-import Head from 'next/head'
 import { useState, useEffect } from 'react'
 import { multipleFileUpload } from '../pages/api/api'
+import styles from '../styles/Home.module.css'
+import { faCloudUploadAlt } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function FileUpload(props) {
   //single or multiple files upload option
@@ -22,33 +23,28 @@ export default function FileUpload(props) {
     await multipleFileUpload(formData);
 }  
 
-  return (
-      <div>
-          <div className='col-6'>
-            <div className='col-6'>
-              <label>Title</label>
-              <input type="text" className='form-control' onChange={(e) => setTitle(e.target.value)} />
-            </div>
-
-            <br/>
-
-          <div className='col-6'>
-            <div className='form-group'>
-                <label>Select Files:</label>
-                <input type='file' onChange={(e) => MultipleFileChange(e)} className='form-control' multiple/>
-              </div>
-              </div>
-              <div className='row'> 
-                <div className='col-10'>
-                <div className="col text-center">
-                  <button type='button' className='btn btn-primary btn-sm' onClick={() => UploadMultipleFiles()}>upload</button>
-                  </div>
-                </div>
-              </div>
+return (
+  <div>
+      <div className='col-6'>
+        <div className='form-group' style={{width:400}}>
+        <label className= {styles.uploadFiles} for="firstImage">
+         <FontAwesomeIcon icon={faCloudUploadAlt} width={35}/>
+            Drag & Drop to Upload Files <n/> or <n/> Browse Files</label>
+          <input id="firstImage" type='file' onChange={(e) => MultipleFileChange(e)} multiple
+          style={{display:'none', visibility:'none', opacity:50, height:'15%', display:'flex', 
+          position:'absolute',top:450}}/>
           </div>
-      </div>
-  )
+          </div>
+          <div className='row'> 
+            <div className='col-10'>
+            <div className="col text-center">
+              <button className="btn btn-success btn-sm" onClick={() => UploadMultipleFiles()} style={{height:30, 
+              borderRadius:30, width:130,fontFamily:'Bahnschrift',fontSize:14}} type="button">Upload</button>
+              </div>
+            </div>
+          </div>
+  </div>
+)
 }
-
 
 
