@@ -1,6 +1,8 @@
 import styles from '../styles/Home.module.css'
 import Footer from '../components/footer'
 import Head from 'next/head'
+import { faShoppingBasket } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Front() {
   return (
@@ -12,8 +14,8 @@ export default function Front() {
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"></link>
         </Head>
 
-        <h1 className={styles.title} style={{color:'#B3B6B7'}}>
-          Welcome to <a href='/'>File Basket!</a>
+        <h1 className="text-sm-left" style={{color:'#7F8C8D', fontSize:50}}>
+          <FontAwesomeIcon style={{color:'#2ECC71'}} icon={faShoppingBasket} width={45}/>FileBasket
         </h1>
 
         <br/><br/>

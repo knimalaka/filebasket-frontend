@@ -26,13 +26,13 @@ export default function FileUpload(props) {
 return (
   <div>
       <div className='col-6'>
-        <div className='form-group' style={{width:400}}>
+        <div className='form-group' style={{width:320}}>
         <label className= {styles.uploadFiles} for="firstImage">
          <FontAwesomeIcon icon={faCloudUploadAlt} width={35}/>
             Drag & Drop to Upload Files <n/> or <n/> Browse Files</label>
           <input id="firstImage" type='file' onChange={(e) => MultipleFileChange(e)} multiple
-          style={{display:'none', visibility:'none', opacity:50, height:'15%', display:'flex', 
-          position:'absolute',top:450}}/>
+          style={{display:'none', visibility:'none', opacity:0, height:'18%', display:'flex', 
+          position:'absolute',top:380}}/>
           </div>
           </div>
           <div className='row'> 

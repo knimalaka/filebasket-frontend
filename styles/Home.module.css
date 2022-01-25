@@ -148,7 +148,8 @@
   top: -50px;
   height: 200px;
   width: 100%;
-  border: 2px dashed #229954;
+  border: 2px dashed #fff;
+  color: #229954;
   border-radius: 15px;
   display: flex;
   align-items: center;
@@ -159,7 +160,15 @@
 }
 
 .uploadFiles:hover{
-  border: 2px dashed red;
-  color: red;
+  border: 2px dashed #229954;
+  color: #fff;
+}
+
+.signout{
+  color: #fff;
+}
+
+.signout:hover{
+  color: #229954;
 }
 
