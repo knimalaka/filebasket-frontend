@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { multipleFileUpload } from '../pages/api/api'
 import styles from '../styles/Home.module.css'
 import { faCloudUploadAlt } from '@fortawesome/free-solid-svg-icons'

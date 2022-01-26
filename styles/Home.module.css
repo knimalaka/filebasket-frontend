@@ -5,7 +5,7 @@
 }
 
 .container {
-  padding: 0 2rem;
+  padding: 0 rem;
 }
 
 .main {
@@ -157,6 +157,8 @@
   flex-direction: column;
   cursor: pointer;
   position: relative;
+  font-size: 17px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .uploadFiles:hover{
@@ -166,6 +168,7 @@
 
 .signout{
   color: #fff;
+  margin-left: 40px;
 }
 
 .signout:hover{

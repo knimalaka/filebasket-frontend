@@ -12,11 +12,11 @@ return(
           <title>File Basket</title>
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"></link>
         </Head>
-        <h1 style={{color:'#229954'}}>Login to account </h1>
+        <h1 style={{color:'#229954', fontSize:40}}>Login to account </h1>
         <LoginForm />
         <br/>
 
-        <h5 style={{color:'#229954'}}>Haven't registered yet? click here to <a style={{color:'white'}} href="../user/signup">sign in!</a></h5>
+        <h5 style={{color:'#229954', fontSize:15,fontWeight:500}}>Haven't registered yet? click here to <a style={{color:'white'}} href="../user/signup">sign in!</a></h5>
         </main>
         </div>
         <Footer />

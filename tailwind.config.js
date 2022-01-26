@@ -1,5 +1,5 @@
 module.exports = {
-  content: [],
+  content: ["./components/navbar.js", "./pages/user/home.js"],
   theme: {
     extend: {},
   },

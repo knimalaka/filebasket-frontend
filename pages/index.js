@@ -14,7 +14,7 @@ export default function Front() {
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"></link>
         </Head>
 
-        <h1 className="text-sm-left" style={{color:'#7F8C8D', fontSize:50}}>
+        <h1 className="inline-flex text-sm-left" style={{color:'#7F8C8D', fontSize:50}}>
           <FontAwesomeIcon style={{color:'#2ECC71'}} icon={faShoppingBasket} width={45}/>FileBasket
         </h1>
 
